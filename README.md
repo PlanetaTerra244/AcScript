@@ -30,6 +30,7 @@ for _, v in next, game:GetDescendants() do
 		table.insert(Stuff, v)
 	end
 end
+
 local player = game.Players.LocalPlayer
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -74,9 +75,9 @@ title.Size = UDim2.new(1,0,0,30)
 title.TextColor3 = Color3.fromRGB(180, 255, 80)
 title.Parent = frame
 
--- Subtítulo
+-- Subtítulo atualizado
 local subtitle = Instance.new("TextLabel")
-subtitle.Text = "from Mario and Biel"
+subtitle.Text = "ScriptsExclusives"
 subtitle.Font = Enum.Font.Gotham
 subtitle.TextSize = 15
 subtitle.BackgroundTransparency = 1
@@ -84,6 +85,17 @@ subtitle.Position = UDim2.new(0,0,0,34)
 subtitle.Size = UDim2.new(1,0,0,20)
 subtitle.TextColor3 = Color3.fromRGB(200, 200, 200)
 subtitle.Parent = frame
+
+-- Créditos finais adicionados
+local credit = Instance.new("TextLabel")
+credit.Text = "by Mario and Biel"
+credit.Font = Enum.Font.Gotham
+credit.TextSize = 12
+credit.BackgroundTransparency = 1
+credit.Position = UDim2.new(0, 0, 1, -18)
+credit.Size = UDim2.new(1, 0, 0, 16)
+credit.TextColor3 = Color3.fromRGB(150, 150, 150)
+credit.Parent = frame
 
 -- Botão de AutoClick
 local clickBtn = Instance.new("TextButton")
@@ -123,13 +135,13 @@ acBtn.TextSize = 16
 acBtn.BackgroundColor3 = Color3.fromRGB(35,35,35)
 acBtn.TextColor3 = Color3.fromRGB(180,255,80)
 acBtn.BorderSizePixel = 0
-acBtn.Size = UDim2.new(0, 38, 0, 38) -- largura e altura iguais para bola
-acBtn.Position = UDim2.new(0.5, -19, 0.5, -19) -- posição centralizada
+acBtn.Size = UDim2.new(0, 38, 0, 38)
+acBtn.Position = UDim2.new(0.5, -19, 0.5, -19)
 acBtn.Visible = false
 acBtn.Parent = gui
 
 local acCorner = Instance.new("UICorner")
-acCorner.CornerRadius = UDim.new(1, 0) -- raio máximo para círculo perfeito
+acCorner.CornerRadius = UDim.new(1, 0)
 acCorner.Parent = acBtn
 
 -- Minimizar e restaurar
