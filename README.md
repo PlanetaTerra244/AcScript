@@ -1,0 +1,2 @@
+# AcScript
+AutoClicker
