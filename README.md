@@ -86,9 +86,9 @@ subtitle.Size = UDim2.new(1,0,0,20)
 subtitle.TextColor3 = Color3.fromRGB(200, 200, 200)
 subtitle.Parent = frame
 
--- Créditos finais adicionados
+-- Créditos finais atualizados
 local credit = Instance.new("TextLabel")
-credit.Text = "by Mario and Biel"
+credit.Text = "by: Mario and Biel"
 credit.Font = Enum.Font.Gotham
 credit.TextSize = 12
 credit.BackgroundTransparency = 1
